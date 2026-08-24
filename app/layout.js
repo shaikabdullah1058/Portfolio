@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import ThemeProvider from "@/components/ThemeProvider";
 import CursorTrail from "@/components/CursorTrail";
-import portfolioicon from "./portfolioicon.ico";
+import portfolioicon from "./portfolioicon.png";
 
 const fraunces = Fraunces({
   subsets: ["latin"],

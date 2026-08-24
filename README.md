@@ -1,4 +1,4 @@
-# Devfolio — Aarav Mehta
+# Devfolio — Shaik Mohammad Abdullah
 
 A full-stack developer portfolio built with Next.js 14 (App Router), Tailwind CSS,
 and Framer Motion, in a strict black/white/zinc monochrome design system.

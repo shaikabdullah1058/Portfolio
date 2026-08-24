@@ -3,6 +3,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import ThemeProvider from "@/components/ThemeProvider";
 import CursorTrail from "@/components/CursorTrail";
+import portfolioicon from "./portfolioicon.ico";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -28,6 +29,10 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   title: "Shaik Mohammad Abdullah",
+   icons: {icon:portfolioicon.src,
+           shortcut: portfolioicon.src,
+           apple: portfolioicon.src,
+           },
   description:
     "Full stack developer building fast, well-crafted products at the intersection of frontend engineering and applied AI. Based in Guntur, India.",
   openGraph: {
@@ -36,6 +41,7 @@ export const metadata = {
       "Full stack developer building fast, well-crafted products at the intersection of frontend engineering and applied AI.",
     type: "website",
   },
+  
 };
 
 export default function RootLayout({ children }) {

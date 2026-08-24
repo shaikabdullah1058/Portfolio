@@ -27,10 +27,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Shaik Mohammad Abdullah — Full Stack Engineer",
+  title: "Shaik Mohammad Abdullah",
   description:
     "Full stack developer building fast, well-crafted products at the intersection of frontend engineering and applied AI. Based in Guntur, India.",
-  metadataBase: new URL("https://aaravmehta.dev"),
   openGraph: {
     title: "Shaik Mohammad Abdullah — Full Stack Engineer",
     description:

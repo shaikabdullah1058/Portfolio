@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #FAFAF9;
+  --bg-secondary: #F5F5F4;
+  --border-subtle: #E7E5E4;
+  --text-primary: #1C1917;
+  --text-secondary: #57534E;
+  --accent: #D97706;
+}
+
+.dark {
+  --bg-primary: #0C0F1D;     /* Rich dark midnight */
+  --bg-secondary: #161B2E;   /* Elevated surface */
+  --border-subtle: #242B45;  /* Subtle borders */
+  --text-primary: #F4F4F5;    /* High contrast text */
+  --text-secondary: #A1A1AA;  /* Secondary text */
+  --accent: #F59E0B;         /* Warm amber accent */
+}
+
+* {
+  border-color: var(--border-subtle);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Preserve default browser cursors everywhere — no custom cursor followers */
+* {
+  cursor: auto;
+}
+a, button, [role="button"], input[type="submit"] {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+/* Visible keyboard focus rings for accessibility */
+:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Faint fixed grid texture — the page's quiet signature backdrop */
+.grid-texture {
+  background-image:
+    linear-gradient(to right, var(--border-subtle) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border-subtle) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.4;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
